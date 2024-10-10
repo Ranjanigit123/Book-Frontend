@@ -1,7 +1,7 @@
 // services/header-cart.service.ts
 
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Book } from '../models/book.model';
 import { environment } from '../../environments/environment'; // Adjust path based on your file structure
@@ -38,4 +38,7 @@ export class HeaderCartService {
         }
         return undefined;
     }
+    getBooks(): Observable<Book[]> {
+        return this.http.get<Book[]>(`${this.apiUrl}/books`);
+    }    
 }
