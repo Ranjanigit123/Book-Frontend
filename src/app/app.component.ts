@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
     <app-header-product></app-header-product>
   `,
 })
-export class AppComponent { }
+export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+}
