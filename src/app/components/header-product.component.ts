@@ -11,7 +11,7 @@ import { Book } from '../models/book.model';
     <nav class="navbar">
       <div class="navbar-brand">
         <span class="navbar-item">
-             Bookstore </span>
+             BOOKSTORE </span>
       </div>
     </nav>
 
