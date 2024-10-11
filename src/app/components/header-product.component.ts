@@ -83,7 +83,7 @@ export class HeaderProductComponent implements OnInit {
 
     ngOnInit(): void {
         // Fetch products from the backend
-        this.http.get<Book[]>('https://book-backend-1-yw8a.onrender.com/api')
+        this.http.get<Book[]>('https://book-backend-1-yw8a.onrender.com/api/books')
             .subscribe(products => {
                 this.products = products;
                 this.filteredProducts = products;
